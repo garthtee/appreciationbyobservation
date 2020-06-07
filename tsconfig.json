@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "target": "es2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noResolve": false,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "baseUrl": "./src",
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "./node_modules/**/*",
+    "./public/*"
+  ]
+}

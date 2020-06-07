@@ -1,0 +1,73 @@
+{
+  "name": "appreciation-by-observation",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "react-toastify": "^6.0.5",
+    "styled-components": "^5.1.1",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.0",
+    "@babel/plugin-transform-runtime": "7.9.0",
+    "@babel/preset-env": "7.9.5",
+    "@babel/preset-react": "7.9.4",
+    "@babel/preset-typescript": "7.9.0",
+    "@babel/runtime": "7.9.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/html-webpack-plugin": "3.2.2",
+    "@types/node": "13.13.0",
+    "@types/react": "16.9.34",
+    "@types/react-bootstrap": "0.32.21",
+    "@types/react-dom": "16.9.6",
+    "@types/react-redux": "7.1.7",
+    "@types/react-router-dom": "5.1.4",
+    "@types/styled-components": "^5.1.0",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "2.28.0",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "8.0.6",
+    "babel-plugin-import": "1.13.0",
+    "copy-webpack-plugin": "^6.0.2",
+    "css-loader": "3.5.2",
+    "eslint": "6.8.0",
+    "eslint-loader": "4.0.0",
+    "eslint-plugin-react": "7.19.0",
+    "extract-text-webpack-plugin": "3.0.2",
+    "file-loader": "^6.0.0",
+    "html-loader": "0.5.5",
+    "html-webpack-plugin": "3.2.0",
+    "node-sass": "4.13.1",
+    "sass-loader": "8.0.2",
+    "style-loader": "1.1.4",
+    "webpack": "4.42.1",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "clean": "rmdir /s /q node_modules",
+    "start": "webpack-dev-server --config webpack.dev.config.js",
+    "build": "webpack --config webpack.prod.config.js",
+    "lint": "eslint src"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
