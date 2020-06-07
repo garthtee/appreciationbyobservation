@@ -26,7 +26,17 @@ const App = () => (
           Garth
         </a>
       </p>
-      <p className="text-muted">📍 Belfast</p>
+      <p className="text-muted">
+        📍
+        <a
+          href="https://goo.gl/maps/UuGpmEwFoCrctA1E9"
+          rel="noopener noreferrer"
+          target="_blank"
+          style={{marginLeft: '4px'}}
+        >
+          Belfast
+        </a>
+      </p>
     </Feature>
     <InstagramImages
       accountUsername={ACCOUNT_NAME}
