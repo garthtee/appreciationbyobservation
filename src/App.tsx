@@ -3,7 +3,6 @@ import InstagramImages from './components/InstagramImages';
 import Container from 'react-bootstrap/Container';
 import {ToastContainer} from 'react-toastify';
 import Feature from './components/Feature';
-import Contact from './components/Contact';
 // CSS
 import './app.scss';
 
@@ -16,20 +15,23 @@ const App = () => (
   >
     <Feature viewHeight={50}>
       <h1>Appreciation by Observation</h1>
-      <p className="text-muted">Photos by Garth</p>
+      <p className="text-muted">
+        Photography by 
+        <a
+          href="https://garthtoland.com/"
+          rel="noopener noreferrer"
+          target="_blank"
+          style={{marginLeft: '4px'}}
+        >
+          Garth
+        </a>
+      </p>
+      <p className="text-muted">📍 Belfast</p>
     </Feature>
     <InstagramImages
       accountUsername={ACCOUNT_NAME}
       displayAmount={6}
     />
-    {/* Hidden until complete */}
-    {/* <Feature
-      xs={12}
-      sm={6}
-      viewHeight={50}
-    >
-      <Contact />
-    </Feature> */}
     <ToastContainer position="bottom-right" />
   </Container>
 );

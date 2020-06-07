@@ -8,6 +8,7 @@ import {
   Col,
   Row,
   Image,
+  Spinner,
 } from 'react-bootstrap';
 import styled from 'styled-components';
 import {toast} from 'react-toastify';
@@ -66,26 +67,30 @@ const InstagramImages = ({
   
   return (
     <Row style={{padding: '50px 0'}}>
-      {images.map((image, i) => (
-        <Col 
-          key={`instagram-images-${i}`}
-          xs={12}
-          sm={6}
-          md={6}
-          lg={4}
-        >
-          <ImageWrapper>
-            <Image
-              alt={`${accountUsername}-${i}`}
-              className="instagram-image"
-              fluid
-              key={i}
-              src={image.displayUrl}
-              onClick={() => window.open(image.url, 'newWin')}
-            />
-          </ImageWrapper>
-        </Col>
-      ))}
+      {!images || images.length === 0 ?
+        <Col xs={12}>
+          <Spinner animation="grow" variant="success" />
+        </Col> :
+        images.map((image, i) => (
+          <Col 
+            key={`instagram-images-${i}`}
+            xs={12}
+            sm={6}
+            md={6}
+            lg={4}
+          >
+            <ImageWrapper>
+              <Image
+                alt={`${accountUsername}-${i}`}
+                className="instagram-image"
+                fluid
+                key={i}
+                src={image.displayUrl}
+                onClick={() => window.open(image.url, 'newWin')}
+              />
+            </ImageWrapper>
+          </Col>
+        ))}
     </Row>
   );
 }
