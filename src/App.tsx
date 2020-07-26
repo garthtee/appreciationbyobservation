@@ -7,6 +7,7 @@ import Feature from './components/Feature';
 import './app.scss';
 
 const ACCOUNT_NAME = "appreciationbyobservation";
+const DISPLAY_AMOUNT = 9;
 
 const App = () => (
   <Container
@@ -40,7 +41,7 @@ const App = () => (
     </Feature>
     <InstagramImages
       accountUsername={ACCOUNT_NAME}
-      displayAmount={6}
+      displayAmount={DISPLAY_AMOUNT}
     />
     <ToastContainer position="bottom-right" />
   </Container>
